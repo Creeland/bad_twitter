@@ -18,6 +18,15 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1/edit
+  # a request is sent to /users/1/edit
+  # the router calls the edit action
+  # User is requested from the model
+  # model pings the database for the user
+  # user is sent back to controller
+  # @user is sent to the view
+  # html is sent back to the controller
+  # that html is sent to your browser
+  end
   def edit
   end
 
